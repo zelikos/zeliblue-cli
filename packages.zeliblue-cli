@@ -5,6 +5,7 @@ fastfetch
 fd-find
 fish
 git
+git-delta
 micro
 navi
 ripgrep
