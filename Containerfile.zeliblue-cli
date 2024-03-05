@@ -21,3 +21,6 @@ RUN curl -Lo /tmp/starship.tar.gz "https://github.com/starship/starship/releases
 
 # Chezmoi
 RUN sh -c "$(curl -fsLS get.chezmoi.io)" -- -b /usr/bin
+
+# Atuin
+RUN bash <(curl https://raw.githubusercontent.com/atuinsh/atuin/main/install.sh)
