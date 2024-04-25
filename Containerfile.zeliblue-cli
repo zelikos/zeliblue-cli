@@ -23,7 +23,7 @@ RUN curl -Lo /tmp/starship.tar.gz "https://github.com/starship/starship/releases
 RUN sh -c "$(curl -fsLS get.chezmoi.io)" -- -b /usr/bin
 
 # Atuin
-RUN curl -Lo /tmp/atuin.tar.gz "https://github.com/atuinsh/atuin/releases/download/v18.0.2/atuin-v18.0.2-x86_64-unknown-linux-gnu.tar.gz" && \
+RUN curl -Lo /tmp/atuin.tar.gz "https://github.com/atuinsh/atuin/releases/download/v18.2.0/atuin-v18.2.0-x86_64-unknown-linux-gnu.tar.gz" && \
     tar -xzf /tmp/atuin.tar.gz -C /tmp && \
-    install -c -m 0755 /tmp/atuin-v18.0.2-x86_64-unknown-linux-gnu/atuin /usr/bin && \
-    rm -r /tmp/atuin-v18.0.2-x86_64-unknown-linux-gnu
+    install -c -m 0755 /tmp/atuin-v18.2.0-x86_64-unknown-linux-gnu/atuin /usr/bin && \
+    rm -r /tmp/atuin-v18.2.0-x86_64-unknown-linux-gnu
