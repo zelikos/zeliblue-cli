@@ -25,7 +25,7 @@ RUN sh -c "$(curl -fsLS get.chezmoi.io)" -- -b /usr/bin
 # Atuin
 # Copy from Bluefin CLI
 COPY --from=ghcr.io/ublue-os/bluefin-cli /usr/bin/atuin /usr/bin/atuin
-COPY --from=ghcr.io/ublue-os/bluefin-cli /usr/bin/bash-prexec /usr/bin/bash-prexec
+COPY --from=ghcr.io/ublue-os/bluefin-cli /usr/share/bash-prexec /usr/share/bash-prexec
 
 # RUN curl -Lo /tmp/atuin.tar.gz "https://github.com/atuinsh/atuin/releases/download/v18.0.2/atuin-v18.0.2-x86_64-unknown-linux-gnu.tar.gz" && \
 #     tar -xzf /tmp/atuin.tar.gz -C /tmp && \
