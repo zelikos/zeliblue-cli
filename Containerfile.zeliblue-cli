@@ -1,8 +1,8 @@
-FROM ghcr.io/ublue-os/fedora-toolbox:latest
+FROM quay.io/fedora/fedora-toolbox:41
 
 LABEL com.github.containers.toolbox="true" \
-      usage="This image is meant to be used with the toolbox or distrobox command" \
-      summary="A cloud-native terminal experience for Zeliblue, powered by Fedora"
+    usage="This image is meant to be used with the toolbox or distrobox command" \
+    summary="A cloud-native terminal experience for Zeliblue, powered by Fedora"
 
 COPY ./files /
 COPY ./packages.zeliblue-cli /toolbox-packages
