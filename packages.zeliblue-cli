@@ -7,7 +7,7 @@ fish
 git
 git-delta
 micro
-navi
 ripgrep
-tldr
+tealdeer
+trash-cli
 zoxide
