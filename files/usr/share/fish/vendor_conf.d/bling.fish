@@ -1,6 +1,5 @@
 if status is-interactive
     # set -gx STARSHIP_CONFIG /etc/starship.toml
-    atuin init fish | source
     starship init fish | source
     zoxide init --cmd cd fish | source
     # set -gx HOST (hostname -s)
